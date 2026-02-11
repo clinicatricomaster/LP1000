@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preload" as="image" href="img/banner-hero1-desktop.webp" media="(min-width: 768px)">
+    <link rel="preload" as="image" href="img/banner-hero1-mobile.webp" media="(max-width: 767px)">
+
+    <title>TricoMaster | Medicina Capilar</title>
+    <meta name="description" content="TricoMaster: Referência em Transplante Capilar e Tricologia Médica. Recupere sua autoestima com segurança.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TricoMaster | Especialistas em Transplante Capilar">
+    <meta property="og:description" content="Recupere sua autoestima com segurança médica. Diagnóstico preciso e transplante de alta densidade.">
+    <meta property="og:image" content="img/banner-hero1-desktop.webp">
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <script src="dados.js"></script>
+
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "MedicalClinic",
+        "name": "TricoMaster Medicina Capilar",
+        "image": "https://www.tricomaster.com.br/img/logo.webp",
+        "url": "https://www.tricomaster.com.br",
+        "telephone": "+5511930731230",
+        "priceRange": "$$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "medicalSpecialty": "Trichology"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Todo mundo precisa de Transplante Capilar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não. O transplante é reservado apenas para casos específicos. Na grande maioria das vezes alcançamos resultados transformadores apenas com the tratamento clínico correto."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "É indicado para homens e mulheres?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim, atendemos ambos os públicos com a mesma excelência."
+            }
+          }
+        ]
+      }
+    ]
+    </script>
+
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    tricoDark: '#022c22', 
+                    tricoGreen: '#064e3b',
+                    tricoGold: '#c5a059', 
+                    tricoBeige: '#f5f5f4',
+                    whatsapp: '#25D366',
+                },
+                fontFamily: {
+                    sans: ['Manrope', 'sans-serif'],
+                    serif: ['PT Serif', 'serif'],
+                },
+                animation: {
+                    'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    'bounce-slow': 'bounce 2s infinite',
+                }
+            }
+        }
+    }
+</script>
+    <style>
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        .snap-x { scroll-snap-type: x mandatory; }
+        .snap-center { scroll-snap-align: center; }
+        details > summary { list-style: none; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: sweep .3s ease-in-out; }
+        @keyframes zoomInCenter { 
+            0% {opacity: 0; transform: translate(-50%, -50%) scale(0.8);} 
+            100% {opacity: 1; transform: translate(-50%, -50%) scale(1);} 
+        }
+        @keyframes zoomSimple { 
+            0% {opacity: 0; transform: scale(0.8);} 
+            100% {opacity: 1; transform: scale(1);} 
+        }
+        @keyframes sweep { 0% {opacity: 0; transform: translateY(-10px)} 100% {opacity: 1; transform: translateY(0)} }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M1QG971Z45"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-M1QG971Z45');
+</script>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1956631368055598'); 
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1956631368055598&ev=PageView&noscript=1"/></noscript>
+    </head>
+<body class="bg-tricoBeige text-stone-800 antialiased font-sans">
+
+    <div id="mobileMenu" class="fixed inset-0 bg-tricoDark z-[9999] flex flex-col items-center justify-center space-y-7 transform translate-x-full transition-transform duration-300">
+        <button onclick="toggleMenu()" class="absolute top-6 right-6 text-white text-4xl hover:text-tricoGold transition">
+            <i class="ph ph-x"></i>
+        </button>
+        
+        <div class="text-tricoGold text-xs font-bold uppercase tracking-[0.3em] mb-2 opacity-50">Navegação</div>
+        
+        <a href="#hero-slider" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-tricoGold transition">Início</a>
+        <a href="#carousel-structure" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-tricoGold transition">A Clínica</a>
+        <a href="#tratamentos" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-tricoGold transition">Tratamentos</a>
+        <a href="#protocolos" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-tricoGold transition">Metodologia</a>
+        <a href="#carousel-results" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-tricoGold transition">Resultados</a>
+        <a href="#depoimentos" onclick="toggleMenu()" class="text-2xl text-white font-serif hover:text-tricoGold transition">Depoimentos</a>
+        
+        <div class="w-12 h-px bg-white/10 my-2"></div>
+        
+        <a href="#agendamento" onclick="toggleMenu()" class="text-2xl text-tricoGold font-serif hover:text-white transition">Contato</a>
+        
+        <a href="#" onclick="irWhatsApp(event)" class="mt-6 px-8 py-3 border border-tricoGold text-tricoGold rounded-sm uppercase tracking-widest text-xs hover:bg-tricoGold hover:text-tricoDark transition">
+            Falar no WhatsApp
+        </a>
+    </div>
+
+    <nav id="mainNav" class="fixed top-0 left-0 w-full z-[100] px-6 py-4 md:py-6 bg-tricoDark/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#" class="block">
+                <img id="logo-img" src="img/logo.webp" alt="TricoMaster Logo" class="h-10 md:h-12 w-auto object-contain">
+            </a>
+            
+            <div class="hidden md:flex items-center gap-6 lg:gap-8">
+                <a href="#hero-slider" class="text-white text-[10px] lg:text-xs uppercase tracking-widest hover:text-tricoGold transition">Início</a>
+                <a href="#carousel-structure" class="text-white text-[10px] lg:text-xs uppercase tracking-widest hover:text-tricoGold transition">A Clínica</a>
+                <a href="#tratamentos" class="text-white text-[10px] lg:text-xs uppercase tracking-widest hover:text-tricoGold transition">Tratamentos</a>
+                <a href="#protocolos" class="text-white text-[10px] lg:text-xs uppercase tracking-widest hover:text-tricoGold transition">Metodologia</a>
+                <a href="#carousel-results" class="text-white text-[10px] lg:text-xs uppercase tracking-widest hover:text-tricoGold transition">Resultados</a>
+                <a href="#depoimentos" class="text-white text-[10px] lg:text-xs uppercase tracking-widest hover:text-tricoGold transition">Depoimentos</a>
+                <a href="#agendamento" class="text-white text-[10px] lg:text-xs uppercase tracking-widest hover:text-tricoGold transition font-bold border-l border-white/20 pl-6">Contato</a>
+            </div>
+
+            <div class="flex items-center md:hidden">
+                <button onclick="toggleMenu()" class="text-white text-3xl"><i class="ph ph-list"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="h-[73px] md:h-[97px]"></div>
+
+<header id="hero-slider" class="relative w-full overflow-hidden bg-tricoDark">
+    
+    <div id="slider-container" class="relative flex transition-transform duration-700 ease-in-out w-full h-[100vw] md:h-[600px]">
+        <div class="min-w-full h-full relative flex-shrink-0">
+            <div class="hidden md:block w-full h-full bg-cover bg-center" style="background-image: url('img/banner-hero1-desktop.webp');"></div>
+            <div class="block md:hidden w-full h-full bg-cover bg-center" style="background-image: url('img/banner-hero1-mobile.webp');"></div>
+            <div class="hidden md:block absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        </div>
+        
+        <div class="min-w-full h-full relative flex-shrink-0">
+            <div class="hidden md:block w-full h-full bg-cover bg-center" style="background-image: url('img/banner-hero2-desktop.webp');"></div>
+            <div class="block md:hidden w-full h-full bg-cover bg-center" style="background-image: url('img/banner-hero2-mobile.webp');"></div>
+            <div class="hidden md:block absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+        </div>
+    </div>
+
+    <div class="relative md:absolute md:inset-0 z-20 w-full max-w-7xl mx-auto px-6 py-10 md:pb-20 flex items-center md:items-end pointer-events-none">
+        <div class="text-center md:text-left w-full pointer-events-auto">
+            <span class="inline-block py-1 px-4 border border-tricoGold text-tricoGold text-[10px] md:text-xs uppercase tracking-[0.3em] mb-6">
+                Excelência em Tricologia Médica
+            </span>
+            <h1 class="font-serif text-white leading-[1.1] md:leading-tight mb-6">
+                <span class="text-3xl md:text-5xl block mb-2 font-light">Especialistas em Reverter a</span>
+                <span class="text-4xl md:text-6xl text-tricoGold font-medium block">Queda Capilar e Calvície.</span>
+            </h1>
+            <p class="text-base md:text-xl text-stone-300 md:text-white font-light max-w-2xl mx-auto md:mx-0 leading-relaxed mb-8">
+                Diagnósticos precisos e resultados reais.
+            </p>
+            <div>
+                <a href="#agendamento" class="inline-block bg-tricoGold text-white font-bold py-4 px-10 rounded-sm text-xs md:text-sm uppercase tracking-widest shadow-xl">
+                    Agendar Consulta
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute top-[calc(100vw-30px)] md:top-6 md:right-10 md:left-auto md:w-auto w-full z-30">
+        <div class="max-w-7xl mx-auto px-6 flex justify-center md:justify-end gap-3">
+            <div class="w-2 h-2 rounded-full bg-white/60 cursor-pointer" onclick="goToSlide(0)"></div>
+            <div class="w-2 h-2 rounded-full bg-white/30 cursor-pointer" onclick="goToSlide(1)"></div>
+        </div>
+    </div>
+</header>
+
+    <section class="py-24 px-6 bg-stone-50 border-b border-stone-200">
+    <div class="max-w-4xl mx-auto text-center flex flex-col gap-20">
+        
+        <h2 class="text-4xl md:text-5xl font-serif text-tricoDark mb-[-40px]">
+            Se Você...
+        </h2>
+        
+        <div class="space-y-6">
+            <h2 class="text-2xl md:text-4xl font-serif text-tricoDark leading-snug">
+                "Em eventos ou reuniões importantes, você sente que a preocupação com o cabelo está <span class="text-tricoGold">minando sutilmente</span> a sua segurança?"
+            </h2>
+            <div class="w-12 h-px bg-tricoGold/30 mx-auto"></div>
+            <p class="text-lg md:text-xl text-stone-600 font-light max-w-2xl mx-auto leading-relaxed">
+                Volte a entrar em qualquer ambiente com a postura e a tranquilidade de quem está no seu melhor momento.
+            </p>
+        </div>
+
+        <div class="space-y-6">
+            <h2 class="text-2xl md:text-4xl font-serif text-tricoDark leading-snug">
+                "Ao se olhar no espelho, você sente que sua imagem externa já não reflete a <span class="text-tricoGold">vitalidade e o sucesso</span> que você conquistou?"
+            </h2>
+            <div class="w-12 h-px bg-tricoGold/30 mx-auto"></div>
+            <p class="text-lg md:text-xl text-stone-600 font-light max-w-2xl mx-auto leading-relaxed">
+                Realinhe sua aparência com a sua essência. Recupere a moldura do rosto e a jovialidade que lhe pertence.
+            </p>
+        </div>
+
+        <div class="space-y-6">
+            <h2 class="text-2xl md:text-4xl font-serif text-tricoDark leading-snug">
+                "O momento do banho deixou de ser um ritual de relaxamento para se tornar uma fonte silenciosa de <span class="text-tricoGold">apreensão</span>?"
+            </h2>
+            <div class="w-12 h-px bg-tricoGold/30 mx-auto"></div>
+            <p class="text-lg md:text-xl text-stone-600 font-light max-w-2xl mx-auto leading-relaxed">
+                Transforme a ansiedade em satisfação. Veja a densidade retornar e sinta a textura de um cabelo saudável novamente.
+            </p>
+        </div>
+
+        <div class="mt-4 animate-pulse-slow">
+            <div class="inline-block px-10 py-5 bg-white border border-tricoGold/30 rounded-sm shadow-xl">
+                <p class="text-tricoDark font-serif text-xl tracking-wide">
+                    A <span class="text-tricoGold font-bold">TRICOMASTER</span> PODE AJUDAR.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <a href="#agendamento" class="inline-block bg-tricoGold text-white font-bold py-5 px-12 rounded-sm hover:bg-tricoDark transition duration-300 shadow-2xl uppercase tracking-[0.2em] text-sm">
+                Agendar Diagnóstico Agora
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <section class="py-24 bg-tricoDark text-white border-b border-tricoGold/20">
+        <div class="max-w-4xl mx-auto text-center px-6">
+            <h2 class="text-tricoGold text-sm font-bold uppercase tracking-widest mb-3">Conheça Nossa Clínica</h2>
+            <h3 class="text-3xl md:text-4xl font-serif text-white mb-2">Bem-vindo à TricoMaster</h3>
+            <p class="text-stone-400 mb-10 text-lg">Uma introdução especial da <span class="text-tricoGold font-bold">Dra. Luciane Pisanelli</span>.</p>
+            
+            <div class="mt-8 flex justify-center relative group">
+                <video class="w-auto max-h-[600px] rounded-sm shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10" controls autoplay muted loop playsinline>
+                    <source src="video/institucional.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-white">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20">
+            
+            <div class="relative order-2 md:order-1">
+                <div class="absolute -top-6 -left-6 w-32 h-32 bg-tricoGold/10 rounded-full z-0"></div>
+                <img id="img-quemsomos" src="" loading="lazy" class="relative z-10 w-full rounded-sm shadow-2xl grayscale hover:grayscale-0 transition duration-700 object-cover h-[500px]" alt="Equipe TricoMaster">
+                
+                <div class="mt-6 md:hidden text-center relative z-10 px-2">
+                    <p class="text-tricoDark font-serif italic text-lg leading-relaxed">
+                        "Nossa missão é simples e poderosa: Devolver confiança, imagem e autoestima por meio de um cuidado capilar de alto nível."
+                    </p>
+                    <p class="text-tricoGold font-bold text-xs mt-3 uppercase tracking-wider">
+                        Dra. Luciane Pisanelli
+                    </p>
+                </div>
+            </div>
+
+            <div class="order-1 md:order-2">
+                <h2 class="text-sm text-tricoGold font-bold uppercase tracking-widest mb-2">Quem Somos</h2>
+                <h3 class="text-4xl font-serif text-tricoDark mb-6">Referência em Medicina Capilar Para Quem Exige o Melhor</h3>
+                <div class="space-y-4 text-stone-600 leading-relaxed text-justify">
+                    <p>A <strong>TricoMaster</strong> nasceu com um propósito: elevar o padrão do tratamento capilar no Brasil. Fugimos das promessas milagrosas para entregar medicina baseada em evidência.</p>
+                    <p>Somos uma clínica médica especializada em saúde e recuperação capilar, criada para pessoas que buscam <strong>resultados reais, segurança e excelência</strong>.</p>
+                    <p>Há mais de <strong>10 anos</strong>, já cuidamos de <strong>mais de 12.000 pacientes</strong>, oferecendo um modelo de atendimento baseado em diagnóstico médico preciso, personalização e acompanhamento contínuo — sem soluções genéricas ou promessas vazias.</p>
+                    
+                    <p class="pt-2 font-medium text-tricoDark border-l-4 border-tricoGold pl-4 hidden md:block">
+                       Nossa missão é simples e poderosa: <br>
+                    <span class="italic">Devolver confiança, imagem e autoestima por meio de um cuidado capilar de alto nível.</span>
+                    <span class="block mt-2 text-tricoGold font-bold uppercase tracking-wider text-sm">
+                       Dra. Luciane Pisanelli
+                    </span>
+                  </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-8">
+        <h3 class="text-2xl md:text-3xl font-serif text-tricoDark">Nossa Estrutura Premium</h3>
+        <p class="text-sm text-stone-500">Tecnologia e conforto em cada etapa da sua jornada.</p>
+    </div>
+
+    <div id="carousel-structure" class="flex overflow-x-auto gap-4 snap-x scrollbar-hide pb-4 scroll-smooth">
+        </div>
+
+    <div class="flex justify-center gap-8 mt-4">
+        <button onclick="scrollCarousel('carousel-structure', -1)" class="text-stone-400 hover:text-tricoDark transition-all duration-300">
+            <i class="ph ph-arrow-left text-xl"></i>
+        </button>
+        <button onclick="scrollCarousel('carousel-structure', 1)" class="text-stone-400 hover:text-tricoDark transition-all duration-300">
+            <i class="ph ph-arrow-right text-xl"></i>
+        </button>
+    </div>
+</div>
+    </section>
+
+    <section id="tratamentos" class="py-20 px-6 bg-tricoBeige border-y border-stone-200">
+    <div class="max-w-7xl mx-auto text-center mb-16">
+        <h3 class="text-3xl md:text-4xl font-serif text-tricoDark mb-4">Tratamentos Especializados</h3>
+        <p class="text-stone-600 text-lg max-w-3xl mx-auto leading-relaxed">
+            Tratamento especializado das principais doenças capilares, com avaliação detalhada e acompanhamento médico contínuo.
+        </p>
+    </div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div onclick="abrirModalTratamento(1)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
+                 data-title="Calvície Masculina"
+                 data-description="A Alopecia Androgenética Masculina é a principal causa de calvície.<br>Nosso protocolo une medicamentos modernos e seguros, laserterapia e medicina regenerativa, aplicados por microinfusão no couro cabeludo, para reduzir a queda e estimular fios mais fortes e saudáveis, com acompanhamento médico e foco em resultados reais.">
+                <div id="trat-1" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Calvície Masculina</h4>
+                    <p class="text-stone-300 text-sm">Ver detalhes +</p>
+                </div>
+            </div>
+
+            <div onclick="abrirModalTratamento(2)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
+                 data-title="Calvície Feminina"
+                 data-description="A calvície feminina exige uma abordagem hormonal delicada. Utilizamos protocolos de bioestimulação capilar e terapia regenerativa para devolver o volume e a densidade, sem efeitos colaterais sistêmicos indesejados.">
+                <div id="trat-2" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Calvície Feminina</h4>
+                    <p class="text-stone-300 text-sm">Ver detalhes +</p>
+                </div>
+            </div>
+
+            <div onclick="abrirModalTratamento(3)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
+                 data-title="Eflúvios (Queda)"
+                 data-description="Para quedas agudas (Pós-Covid, Pós-Parto, Estresse), focamos na interrupção imediata da queda com um 'pool' de vitaminas injetáveis e fotobiomodulação para acelerar a fase de crescimento (anágena).">
+                <div id="trat-3" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Eflúvios (Queda)</h4>
+                    <p class="text-stone-300 text-sm">Ver detalhes +</p>
+                </div>
+            </div>
+
+            <div onclick="abrirModalTratamento(4)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
+                 data-title="Alopecia Areata"
+                 data-description="Doença autoimune que causa falhas circulares. Tratamos com imunomoduladores locais e corticoides intralesionais de alta precisão para parar o ataque do sistema imune ao folículo.">
+                <div id="trat-4" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Alopecia Areata</h4>
+                    <p class="text-stone-300 text-sm">Ver detalhes +</p>
+                </div>
+            </div>
+
+            <div onclick="abrirModalTratamento(5)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
+                 data-title="Fibrosante"
+                 data-description="A Alopecia Frontal Fibrosante requer diagnóstico precoce para evitar cicatrizes permanentes. O foco é desinflamar a linha frontal e preservar os fios existentes.">
+                <div id="trat-5" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Fibrosante</h4>
+                    <p class="text-stone-300 text-sm">Ver detalhes +</p>
+                </div>
+            </div>
+
+            <div onclick="abrirModalTratamento(6)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
+                 data-title="Dermatites"
+                 data-description="Tratamento focado na saúde do couro cabeludo: controle de oleosidade excessiva, caspa (dermatite seborreica) e foliculites, preparando o terreno para o crescimento saudável.">
+                <div id="trat-6" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Dermatites</h4>
+                    <p class="text-stone-300 text-sm">Ver detalhes +</p>
+                </div>
+            </div>
+
+            <div onclick="abrirModalTratamento(7)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
+                 data-title="Protocolos Infantis/Adolecentes"
+                 data-description="A TricoMaster oferece cuidados capilares especializados para crianças e adolescentes, com avaliação médica, protocolos seguros e acompanhamento individualizado, sempre respeitando a idade e o desenvolvimento do paciente.">
+                <div id="trat-7" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Protocolos Infantis/Adolecentes</h4>
+                    <p class="text-stone-300 text-sm">Ver detalhes +</p>
+                </div>
+            </div>
+
+            <div onclick="abrirModalTratamento(8)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
+                 data-title="Transplante Capilar"
+                 data-description="Transplante Capilar FUE: Técnica fio a fio, sem cicatriz linear. Ideal para cobrir entradas e coroa com máxima naturalidade e recuperação rápida.">
+                <div id="trat-8" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Transplante Capilar</h4>
+                    <p class="text-stone-300 text-sm">Ver detalhes +</p>
+                </div>
+            </div>
+
+            <div onclick="abrirModalTratamento(9)" class="group relative h-80 rounded-sm overflow-hidden cursor-pointer shadow-lg transform transition hover:-translate-y-1"
+                 data-title="Biópsia Capilar"
+                 data-description="A Biópsia Capilar é a análise microscópica decisiva que vai além do exame visual para descobrir a causa exata da queda e reafirmar o diagnóstico.">
+                <div id="trat-9" class="absolute inset-0 bg-cover bg-center transition duration-700 group-hover:scale-110"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-tricoDark/90 via-tricoDark/40 to-transparent opacity-90 transition duration-300 group-hover:opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full border-b-4 border-transparent group-hover:border-tricoGold transition-all duration-300 text-center">
+                    <h4 class="text-xl font-serif font-bold text-white mb-2">Biópsia Capilar</h4>
+                    <p class="text-stone-300 text-sm">Ver detalhes +</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="protocolos" class="py-24 bg-tricoDark text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+            <h2 class="text-tricoGold text-sm font-bold uppercase tracking-widest mb-3">Metodologia 360º</h2>
+            <h3 class="text-3xl md:text-4xl font-serif mb-6">O Protocolo TricoMaster</h3>
+            <p class="text-stone-300 text-lg max-w-3xl mx-auto leading-relaxed">
+                O Protocolo TricoMaster é estruturado em fases estratégicas e progressivas, desenvolvidas para oferecer precisão médica, acompanhamento rigoroso e resultados sustentáveis.
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 items-stretch">
+            
+            <div onclick="abrirModalProtocolo(this)" data-id="1" data-title="1. Diagnóstico" data-desc="Tudo começa com a Tricoscopia Digital.
+Analisamos cuidadosamente os fios e o couro cabeludo para entender a real necessidade de cada paciente e definir, com precisão, o melhor caminho do tratamento — sempre com foco em segurança e resultados reais."
+                 class="flex flex-col items-center justify-center text-center bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10 h-full">
+                <div class="text-4xl text-tricoGold mb-4 group-hover:scale-110 transition"><i class="ph ph-stethoscope"></i></div>
+                <h4 class="text-xl font-serif mb-2">1. Diagnóstico</h4>
+                <p class="text-[10px] text-tricoGold uppercase tracking-widest opacity-70">Ver detalhes +</p>
+            </div>
+
+            <div onclick="abrirModalProtocolo(this)" data-id="2" data-title="2. Fase Purificação" data-desc="Preparamos o 'terreno'. Realizamos um detox capilar profundo para remover obstruções, oleosidade e inflamações que impedem a oxigenação dos folículos."
+                 class="flex flex-col items-center justify-center text-center bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10 h-full">
+                <div class="text-4xl text-tricoGold mb-4 group-hover:scale-110 transition"><i class="ph ph-syringe"></i></div>
+                <h4 class="text-xl font-serif mb-2">2. Fase Purificação</h4>
+                <p class="text-[10px] text-tricoGold uppercase tracking-widest opacity-70">Ver detalhes +</p>
+            </div>
+
+            <div onclick="abrirModalProtocolo(this)" data-id="3" data-title="3. Fase Revitalização" data-desc="A fase ativa. Injeção de fatores de crescimento, laserterapia e medicamentos diretamente na raiz para forçar o nascimento de novos fios e engrossar os existentes."
+                 class="flex flex-col items-center justify-center text-center bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10 h-full">
+                <div class="text-4xl text-tricoGold mb-4 group-hover:scale-110 transition"><i class="ph ph-recycle"></i></div>
+                <h4 class="text-xl font-serif mb-2">3. Fase Revitalização</h4>
+                <p class="text-[10px] text-tricoGold uppercase tracking-widest opacity-70">Ver detalhes +</p>
+            </div>
+
+            <div onclick="abrirModalProtocolo(this)" data-id="4" data-title="4. Fase Controle" data-desc="O segredo do longo prazo. Estabelecemos uma rotina simples de cuidados home-care e visitas periódicas para garantir que o resultado se mantenha por anos."
+                 class="flex flex-col items-center justify-center text-center bg-white/5 border border-white/10 p-8 rounded-sm hover:border-tricoGold/50 transition duration-300 group cursor-pointer hover:bg-white/10 h-full">
+                <div class="text-4xl text-tricoGold mb-4 group-hover:scale-110 transition"><i class="ph ph-infinity"></i></div>
+                <h4 class="text-xl font-serif mb-2">4. Fase Controle</h4>
+                <p class="text-[10px] text-tricoGold uppercase tracking-widest opacity-70">Ver detalhes +</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <section class="py-24 px-6 bg-white border-b border-stone-200">
+    <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-tricoGold text-sm font-bold uppercase tracking-widest mb-3">Critérios de Elegibilidade</h2>
+            <h3 class="text-3xl font-serif text-tricoDark mb-4">A TricoMaster é para você?</h3>
+            <p class="text-stone-500 max-w-2xl mx-auto">Não somos uma clínica de volume. Somos um centro de excelência focado em quem busca o melhor.</p>
+        </div>
+
+        <div class="max-w-2xl mx-auto shadow-2xl rounded-sm overflow-hidden border border-tricoGold/10">
+            <div class="bg-tricoDark p-10 md:p-14 relative overflow-hidden flex flex-col items-center text-center">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-tricoGold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+                
+                <div class="relative z-10 w-20 h-20 bg-white/10 rounded-full flex items-center justify-center mb-8 text-tricoGold border border-tricoGold/30">
+                    <i class="ph-fill ph-seal-check text-4xl"></i>
+                </div>
+                
+                <h4 class="relative z-10 text-xl font-serif font-bold text-white mb-10">Este método <span class="text-tricoGold border-b-2 border-tricoGold">É IDEAL</span> para quem:</h4>
+                
+                <div class="relative z-10 space-y-8 w-full">
+                    <div class="flex flex-col items-center">
+                        <p class="text-stone-200 text-base font-medium">Busca um **resultado extremamente natural**</p>
+                        <p class="text-stone-500 text-sm italic mt-1 font-light">e não aceita efeitos artificiais ou exagerados.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-stone-200 text-base font-medium">Prioriza **segurança médica real**</p>
+                        <p class="text-stone-500 text-sm italic mt-1 font-light">e não se expõe a riscos desnecessários.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-stone-200 text-base font-medium">Valoriza um **atendimento humano e exclusivo**</p>
+                        <p class="text-stone-500 text-sm italic mt-1 font-light">e não quer tratamentos padronizados.</p>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-stone-200 text-base font-medium">Foca na **preservação dos fios a longo prazo**</p>
+                        <p class="text-stone-500 text-sm italic mt-1 font-light">e não acredita em soluções milagrosas.</p>
+                    </div>
+                </div>
+
+                <div class="mt-12 relative z-10 w-full max-w-xs">
+                    <a href="#agendamento" class="block w-full text-center bg-tricoGold text-tricoDark font-bold py-5 rounded-sm hover:bg-white transition duration-300 shadow-lg uppercase tracking-widest text-xs">
+                        Eu me enquadro neste perfil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-10">
+        <h2 class="text-sm text-tricoGold font-bold uppercase tracking-widest mb-2">Resultados Reais</h2>
+        <h3 class="text-3xl md:text-4xl font-serif text-tricoDark">Portfólio de Casos</h3>
+    </div>
+    
+    <div id="carousel-results" class="flex overflow-x-auto gap-6 snap-x scrollbar-hide pb-4 scroll-smooth">
+        </div>
+
+    <div class="flex justify-center gap-10 mt-6">
+        <button onclick="scrollCarousel('carousel-results', -1)" class="text-stone-400 hover:text-tricoDark transition-all duration-300">
+            <i class="ph ph-arrow-left text-2xl"></i>
+        </button>
+        <button onclick="scrollCarousel('carousel-results', 1)" class="text-stone-400 hover:text-tricoDark transition-all duration-300">
+            <i class="ph ph-arrow-right text-2xl"></i>
+        </button>
+    </div>
+
+    <p class="text-center text-xs text-stone-400 mt-6 italic">Fotos autorizadas. Os resultados variam de acordo com o organismo.</p>
+</div>
+    </section>
+
+    <section id="depoimentos" class="py-24 bg-tricoDark text-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-tricoGold text-sm font-bold uppercase tracking-widest mb-3 text-center">Experiência do Paciente</h2>
+        <h3 class="text-3xl font-serif text-white mb-12 text-center">O Que Dizem Nossos Pacientes</h3>
+
+        <div id="carousel-testimonials" class="flex overflow-x-auto gap-6 snap-x scrollbar-hide pb-4 scroll-smooth">
+            
+            <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white/5 border border-white/10 p-8 rounded-sm relative text-center">
+                <i class="ph-fill ph-quotes text-4xl text-tricoGold/20 absolute top-4 right-4"></i>
+                <div class="flex justify-center text-tricoGold mb-4 text-sm gap-1">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-stone-300 italic mb-6 leading-relaxed">"Tenho sido atendido na Clínica, na unidade do Tatuapé, desde Fevereiro de 2025 e posso afirmar que superou minhas expectativas. Desde a primeira consulta com a Dra. Luciane, bem como em todas as sessões de tratamento com o David, sempre tive um excelente nível de atendimento, com muita atenção e cuidado! E os resultados ja são notáveis!"</p>
+                <div>
+                    <p class="font-bold text-white">Ricardo de Melo Jacob</p>
+                    <p class="text-xs text-tricoGold uppercase">Protocolo Masculino</p>
+                </div>
+            </div>
+
+            <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white/5 border border-white/10 p-8 rounded-sm relative text-center">
+                <i class="ph-fill ph-quotes text-4xl text-tricoGold/20 absolute top-4 right-4"></i>
+                <div class="flex justify-center text-tricoGold mb-4 text-sm gap-1">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-stone-300 italic mb-6 leading-relaxed">"Quero deixar registrado o quanto minha experiência na Tricomaster foi simplesmente impecável. É nítido o nível de excelência, organização e profissionalismo presente em cada detalhe da clínica. A médica demonstra um conhecimento extraordinário, passando total segurança, atenção e cuidado durante todo o atendimento."</p>
+                <div>
+                    <p class="font-bold text-white">Dalila Rodrigues</p>
+                    <p class="text-xs text-tricoGold uppercase">Protocolo Feminino</p>
+                </div>
+            </div>
+
+            <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white/5 border border-white/10 p-8 rounded-sm relative text-center">
+                <i class="ph-fill ph-quotes text-4xl text-tricoGold/20 absolute top-4 right-4"></i>
+                <div class="flex justify-center text-tricoGold mb-4 text-sm gap-1">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-stone-300 italic mb-6 leading-relaxed">"Clínica linda, organizada e limpa, atendimento e recepção maravilhoso, amo fazer meus tratamentos com a Dra Luciane, muito atenciosa e profissional, explica tudo muito direitinho e tira todas nossas dúvidas. Parabéns a todos."</p>
+                <div>
+                    <p class="font-bold text-white">Layce Carttielli</p>
+                    <p class="text-xs text-tricoGold uppercase">Protocolo Feminino</p>
+                </div>
+            </div>
+
+            <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white/5 border border-white/10 p-8 rounded-sm relative text-center">
+                <i class="ph-fill ph-quotes text-4xl text-tricoGold/20 absolute top-4 right-4"></i>
+                <div class="flex justify-center text-tricoGold mb-4 text-sm gap-1">
+                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                </div>
+                <p class="text-stone-300 italic mb-6 leading-relaxed">"O atendimento é ótimo desde o momento em que você entra na clínica. Todos os funcionários são muito gentis. A Dra. Luciane além de ser muito receptiva, demonstra muita confiança e tranquiliza demais as pacientes. Minha mãe amou o atendimento e sentiu confiança no tratamento."</p>
+                <div>
+                    <p class="font-bold text-white">Natália Pifai</p>
+                    <p class="text-xs text-tricoGold uppercase">Protocolo Feminino</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="flex justify-center gap-4 mt-8">
+            <button onclick="scrollCarousel('carousel-testimonials', -1)" class="text-stone-400 hover:text-white transition"><i class="ph ph-arrow-left text-2xl"></i></button>
+            <button onclick="scrollCarousel('carousel-testimonials', 1)" class="text-stone-400 hover:text-white transition"><i class="ph ph-arrow-right text-2xl"></i></button>
+        </div>
+    </div>
+</section>
+
+    <section class="py-24 bg-tricoBeige border-t border-stone-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-tricoGold text-sm font-bold uppercase tracking-widest mb-3">Tira-Dúvidas</h2>
+                <h3 class="text-3xl font-serif text-tricoDark">Perguntas Frequentes</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start w-full">
+                
+                <div class="flex flex-col gap-4 w-full">
+                    
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            Todo mundo precisa de Transplante Capilar?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            Fique tranquilo, a resposta é não. O transplante é reservado apenas para casos específicos.<br>Na grande maioria das vezes alcançamos resultados transformadores apenas com o tratamento clínico correto.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            É indicado para homens e mulheres?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            Sim, atendemos ambos os públicos com a mesma excelência.<br>Nossos tratamentos abrangem desde a calvície androgenética até quedas provocadas por estresse.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            Serve para qualquer tipo de queda?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            Nossos protocolos abrangem todo o espectro da saúde capilar: das inflamações e calvície androgenética até casos mais delicados.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            Como funciona a avaliação inicial?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            Na consulta inicial, você será avaliado pelo Médico Tricologista.<br>Será realizado uma análise detalhada do seu couro cabeludo através da Tricoscopia Digital.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            Como funciona o protocolo de tratamento?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            Na TricoMaster, o tratamento é 100% direcionado ao problema específico de cada paciente, sem fórmula pronta.
+                        </div>
+                    </details>
+                </div>
+
+                <div class="flex flex-col gap-4 w-full">
+                    
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            Por que na TricoMaster não aceitamos convênios?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            Para manter um atendimento médico de alto padrão.<br>Na Tricomaster, priorizamos avaliação detalhada, diagnóstico preciso e tratamentos personalizados, garantindo um cuidado completo, transparente e focado em resultados reais.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            Existem efeitos colaterais?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            A segurança é nossa prioridade.<br>Os 
+ têm efeitos colaterais mínimos; ocasionalmente pode ocorrer leve sensibilidade local.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            Por que o tratamento pré e pós-transplante é importante?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            Porque ele prepara o couro cabeludo, protege os fios transplantados e garante melhor cicatrização, crescimento e durabilidade dos resultados.<br>O transplante faz parte de um processo médico — não é um procedimento isolado.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            Quanto tempo leva para ver resultados?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            A maioria dos pacientes nota os primeiros sinais de melhora após 2 a 3 meses de tratamento contínuo.
+                        </div>
+                    </details>
+
+                    <details class="group bg-white rounded-sm shadow-sm border border-stone-200 open:border-tricoGold transition duration-300 w-full">
+                        <summary class="flex justify-between items-center font-bold cursor-pointer p-5 text-tricoDark select-none w-full">
+                            Por quê escolher a TricoMaster?
+                            <span class="transition group-open:rotate-180 text-tricoGold shrink-0 ml-2"><i class="ph-bold ph-caret-down"></i></span>
+                        </summary>
+                        <div class="text-stone-600 px-5 pb-5 pt-0 leading-relaxed text-sm">
+                            Porque somos uma Clínica Médica com foco total em recuperação capilar com mais de 10 anos de mercado.
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agendamento" class="py-24 px-6 bg-white border-t border-stone-200">
+    <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-tricoGold text-sm font-bold uppercase tracking-widest mb-3">Onde Estamos</h2>
+            <h3 class="text-3xl md:text-4xl font-serif text-tricoDark mb-4">Nossas Unidades</h3>
+            <p class="text-stone-600 text-lg max-w-2xl mx-auto leading-relaxed">
+                Escolha a unidade mais próxima e agende sua avaliação com nossa equipe especializada.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-tricoDark p-10 rounded-sm relative overflow-hidden group border border-white/5 flex flex-col items-center text-center">
+                <div class="relative z-10 flex flex-col items-center w-full">
+                    <div class="flex flex-col items-center gap-2 mb-4">
+                        <i class="ph-fill ph-map-pin text-tricoGold text-2xl"></i>
+                        <h4 class="text-white font-serif text-xl">TricoMaster Tatuapé</h4>
+                    </div>
+                    <p class="text-stone-400 text-sm leading-relaxed mb-6">
+                        Rua Emilio Mallet, 1166<br>
+                        Tatuapé - São Paulo/SP
+                    </p>
+                    <div class="space-y-2 mb-8 text-sm">
+                        <p class="text-white"><span class="text-tricoGold font-bold">Telefone:</span> 11 2091.7855</p>
+                        <p class="text-white"><span class="text-tricoGold font-bold">WhatsApp:</span> 11 93073.1230</p>
+                    </div>
+                    <a id="link-unidade1" href="#" target="_blank" class="inline-block border border-tricoGold/50 text-tricoGold text-xs font-bold uppercase tracking-widest px-6 py-3 hover:bg-tricoGold hover:text-tricoDark transition w-full md:w-auto">
+                        Abrir no Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <div class="bg-tricoDark p-10 rounded-sm relative overflow-hidden group border border-white/5 flex flex-col items-center text-center">
+                <div class="relative z-10 flex flex-col items-center w-full">
+                    <div class="flex flex-col items-center gap-2 mb-4">
+                        <i class="ph-fill ph-map-pin text-tricoGold text-2xl"></i>
+                        <h4 class="text-white font-serif text-xl">TricoMaster Santana</h4>
+                    </div>
+                    <p class="text-stone-400 text-sm leading-relaxed mb-6">
+                        Rua Conselheiro Saraiva, 306 - Sala 115<br>
+                        Santana - São Paulo/SP
+                    </p>
+                    <div class="space-y-2 mb-8 text-sm">
+                        <p class="text-white"><span class="text-tricoGold font-bold">Telefone:</span> 11 2091.7855</p>
+                        <p class="text-white"><span class="text-tricoGold font-bold">WhatsApp:</span> 11 93073.1230</p>
+                    </div>
+                    <a id="link-unidade2" href="#" target="_blank" class="inline-block border border-tricoGold/50 text-tricoGold text-xs font-bold uppercase tracking-widest px-6 py-3 hover:bg-tricoGold hover:text-tricoDark transition w-full md:w-auto">
+                        Abrir no Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-12">
+            <a id="link-instagram" href="#" target="_blank" class="inline-flex items-center gap-2 text-stone-500 hover:text-tricoGold transition">
+                <i class="ph ph-instagram-logo text-xl"></i>
+                <span id="txt-instagram" class="text-sm font-bold uppercase tracking-widest">@tricomaster</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <footer class="bg-tricoDark border-t border-white/5 text-stone-500 py-10 text-center text-xs">
+        <p class="mb-2 text-stone-400 font-bold">TRICOMASTER MEDICINA CAPILAR</p>
+        <p>© 2025. Todos os direitos reservados.</p>
+        <p class="mt-2">Diretora Técnica Médica: Dra. Luciane Pisanelli | CRM-SP [Número]</p>
+    </footer>
+
+    <a href="#" onclick="irWhatsApp(event)" class="fixed bottom-6 right-6 z-50 bg-whatsapp text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition duration-300 animate-bounce-slow">
+        <i class="ph-fill ph-whatsapp-logo text-3xl"></i>
+        <span class="absolute top-0 right-0 w-4 h-4 bg-red-500 rounded-full border-2 border-white"></span>
+    </a>
+
+    <div id="modalTratamento" class="fixed inset-0 z-[100] hidden">
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-sm transition-opacity" onclick="fecharModalTratamento()"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90vw] md:w-[600px] bg-white rounded-sm shadow-2xl overflow-hidden flex flex-col animate-[zoomInCenter_0.25s_ease-out]">
+            <div class="relative h-64 bg-stone-200">
+                <img id="modal-img" src="" class="w-full h-full object-cover" alt="Detalhe do tratamento">
+                <button onclick="fecharModalTratamento()" class="absolute top-4 right-4 bg-white/20 hover:bg-white text-white hover:text-tricoDark rounded-full p-2 transition"><i class="ph-bold ph-x text-xl"></i></button>
+            </div>
+            
+            <div class="p-8 text-center">
+                <h3 id="modal-titulo" class="text-2xl font-serif text-tricoDark mb-4 font-bold">Título do Tratamento</h3>
+                <p id="modal-desc" class="text-stone-600 leading-relaxed">Descrição detalhada do tratamento aqui.</p>
+                
+                <div class="mt-8 pt-6 border-t border-stone-100 flex justify-center">
+                    <button onclick="fecharModalTratamento()" class="text-sm font-bold text-tricoGold uppercase tracking-wider hover:text-tricoDark transition">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalImagem" class="fixed inset-0 z-[110] hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4" onclick="fecharModalImagem()">
+        <button class="absolute top-6 right-6 text-white text-4xl hover:text-tricoGold transition z-50"><i class="ph-bold ph-x"></i></button>
+        <img id="img-zoom" src="" class="max-w-full max-h-[90vh] object-contain rounded-sm shadow-2xl animate-[zoomSimple_0.3s_ease-out]" alt="Zoom">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
